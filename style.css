@@ -1,0 +1,80 @@
+/* Custom styles for Intervue.io Assignment */
+body {
+  font-family: 'Sora', sans-serif;
+  background: #fff;
+}
+
+h1, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.navbar-brand span {
+  font-weight: 700;
+}
+
+.input-group .form-control {
+  border-left: 0;
+  box-shadow: none;
+}
+
+.input-group .input-group-text {
+  background: #fff;
+  border-right: 0;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border: 1px solid #eee;
+}
+
+.badge.bg-warning {
+  background: #ffb300 !important;
+}
+
+.badge.bg-success {
+  background: #2ecc40 !important;
+}
+
+.badge.bg-danger {
+  background: #ff4136 !important;
+}
+
+.bg-light {
+  background: #f8f9fa !important;
+}
+
+footer.bg-dark {
+  background: #232323 !important;
+}
+
+footer .navbar-brand span {
+  color: #ffb300 !important;
+}
+
+footer .form-label {
+  color: #ffb300;
+  font-weight: 600;
+}
+
+footer .btn-warning {
+  background: #ffb300;
+  border: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  .navbar .navbar-collapse {
+    background: #fff;
+    padding: 1rem;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+  .footer .row > div {
+    margin-bottom: 1.5rem;
+  }
+} 

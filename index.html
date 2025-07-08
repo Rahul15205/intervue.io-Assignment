@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intervue.io Assignment</title>
+  <!-- Sora Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: 'Sora', sans-serif; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg bg-white py-3" style="border-bottom: none; box-shadow: none;">
+    <div class="container-fluid px-3 d-flex align-items-center justify-content-between">
+      <a class="navbar-brand p-0 m-0" href="#">
+        <img src="html-css-assignment/img1.png" alt="intervue logo" style="height: 32px;">
+      </a>
+      <!-- Desktop nav -->
+      <nav class="d-none d-lg-flex align-items-center gap-4 flex-grow-1 justify-content-end" style="font-family: 'Sora', sans-serif; font-size: 1.15rem;">
+        <a href="#" class="fw-bold d-flex align-items-center" style="color: #111; text-decoration: none;">
+          <i class="fa fa-user me-2"></i>Become an Interviewer <i class="fa fa-arrow-up-right-from-square ms-1" style="font-size: 0.9em;"></i>
+        </a>
+        <a href="#" class="text-dark text-decoration-none">features</a>
+        <a href="#" class="text-dark text-decoration-none">Pricing</a>
+        <a href="#" class="text-dark text-decoration-none">Start a trial</a>
+        <a href="#" class="btn btn-outline-dark ms-2 px-4 py-2" style="border-radius: 0; font-weight: 400;">Login</a>
+        <a href="#" class="btn btn-dark ms-2 px-4 py-2" style="border-radius: 0; font-weight: 400;">Signup</a>
+      </nav>
+      <!-- Mobile hamburger -->
+      <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="font-size: 1.7rem;"></span>
+      </button>
+    </div>
+    <!-- Mobile nav menu -->
+    <div class="collapse d-lg-none" id="navbarNavMobile">
+      <nav class="bg-white py-3 px-4" style="font-family: 'Sora', sans-serif; font-size: 1.1rem;">
+        <a href="#" class="fw-bold d-flex align-items-center mb-3" style="color: #111; text-decoration: none;">
+          <i class="fa fa-user me-2"></i>Become an Interviewer <i class="fa fa-arrow-up-right-from-square ms-1" style="font-size: 0.9em;"></i>
+        </a>
+        <a href="#" class="text-dark text-decoration-none mb-3 d-block">features</a>
+        <a href="#" class="text-dark text-decoration-none mb-3 d-block">Pricing</a>
+        <a href="#" class="text-dark text-decoration-none mb-3 d-block">Start a trial</a>
+        <a href="#" class="btn btn-outline-dark w-100 mb-2" style="border-radius: 0; font-weight: 400;">Login</a>
+        <a href="#" class="btn btn-dark w-100" style="border-radius: 0; font-weight: 400;">Signup</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-5 text-center" style="background: #fff;">
+    <div class="container">
+      <h1 class="fw-bold mb-3 text-capitalize" style="font-size: 2rem; font-family: 'Sora', sans-serif;">Technical interview resources</h1>
+      <p class="mb-4" style="color: #888; font-size: 1.05rem; font-family: 'Sora', sans-serif;">Find all the technical interview resources here</p>
+      <div class="mx-auto mb-4" style="max-width: 340px;">
+        <div class="input-group search-bar-desktop" style="background: #f2f2f2; border-radius: 999px; padding: 4px 14px;">
+          <span class="input-group-text bg-transparent border-0 px-0" style="background: none;"><i class="fa fa-search text-muted search-icon-desktop"></i></span>
+          <input type="text" class="form-control border-0 bg-transparent search-input-desktop" placeholder="Search skills, role, seniority" style="font-size: 1rem; background: none;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    @media (min-width: 992px) {
+      .search-bar-desktop {
+        max-width: 600px !important;
+        height: 60px;
+        padding: 0 28px !important;
+        font-size: 1.25rem !important;
+      }
+      .search-bar-desktop .form-control.search-input-desktop {
+        font-size: 1.25rem !important;
+        height: 60px !important;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .search-bar-desktop .input-group-text .search-icon-desktop {
+        font-size: 1.5rem !important;
+      }
+      .mx-auto.mb-4 {
+        max-width: 600px !important;
+      }
+    }
+  </style>
+
+  <!-- Resource Cards Section -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Easy Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 18px;">
+            <div class="card-body p-0">
+              <span class="badge mb-2" style="background: #2970ff; color: #fff; font-weight: 600; border-radius: 6px; padding: 6px 14px; font-size: 0.95rem;">Easy</span>
+              <span class="text-uppercase text-muted small ms-2" style="font-size: 0.85rem;">Data Structures & Algorithms</span>
+              <h5 class="card-title mt-2 mb-2" style="font-size: 1.1rem; font-weight: 700;">Design a Free Food App</h5>
+              <p class="card-text mb-0" style="font-size: 0.97rem; color: #444;">We created this guide after speaking with our 100+ interviewers, which includes detailed notes, common challenges, as well as our approach at mock interviews.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Medium Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 18px;">
+            <div class="card-body p-0">
+              <span class="badge mb-2" style="background: #ffb300; color: #fff; font-weight: 600; border-radius: 6px; padding: 6px 14px; font-size: 0.95rem;">Medium</span>
+              <span class="text-uppercase text-muted small ms-2" style="font-size: 0.85rem;">Data Structures & Algorithms</span>
+              <h5 class="card-title mt-2 mb-2" style="font-size: 1.1rem; font-weight: 700;">Design a Free Food App</h5>
+              <p class="card-text mb-0" style="font-size: 0.97rem; color: #444;">We created this guide after speaking with our 100+ interviewers, which includes detailed notes, common challenges, as well as our approach at mock interviews.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Hard Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 18px;">
+            <div class="card-body p-0">
+              <span class="badge mb-2" style="background: #2ecc40; color: #fff; font-weight: 600; border-radius: 6px; padding: 6px 14px; font-size: 0.95rem;">Hard</span>
+              <span class="text-uppercase text-muted small ms-2" style="font-size: 0.85rem;">Data Structures & Algorithms</span>
+              <h5 class="card-title mt-2 mb-2" style="font-size: 1.1rem; font-weight: 700;">Design a Free Food App</h5>
+              <p class="card-text mb-0" style="font-size: 0.97rem; color: #444;">We created this guide after speaking with our 100+ interviewers, which includes detailed notes, common challenges, as well as our approach at mock interviews.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for 2nd row -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 18px;">
+            <div class="card-body p-0">
+              <span class="badge mb-2" style="background: #2970ff; color: #fff; font-weight: 600; border-radius: 6px; padding: 6px 14px; font-size: 0.95rem;">Easy</span>
+              <span class="text-uppercase text-muted small ms-2" style="font-size: 0.85rem;">Data Structures & Algorithms</span>
+              <h5 class="card-title mt-2 mb-2" style="font-size: 1.1rem; font-weight: 700;">Design a Free Food App</h5>
+              <p class="card-text mb-0" style="font-size: 0.97rem; color: #444;">We created this guide after speaking with our 100+ interviewers, which includes detailed notes, common challenges, as well as our approach at mock interviews.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 18px;">
+            <div class="card-body p-0">
+              <span class="badge mb-2" style="background: #ffb300; color: #fff; font-weight: 600; border-radius: 6px; padding: 6px 14px; font-size: 0.95rem;">Medium</span>
+              <span class="text-uppercase text-muted small ms-2" style="font-size: 0.85rem;">Data Structures & Algorithms</span>
+              <h5 class="card-title mt-2 mb-2" style="font-size: 1.1rem; font-weight: 700;">Design a Free Food App</h5>
+              <p class="card-text mb-0" style="font-size: 0.97rem; color: #444;">We created this guide after speaking with our 100+ interviewers, which includes detailed notes, common challenges, as well as our approach at mock interviews.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 18px;">
+            <div class="card-body p-0">
+              <span class="badge mb-2" style="background: #2ecc40; color: #fff; font-weight: 600; border-radius: 6px; padding: 6px 14px; font-size: 0.95rem;">Hard</span>
+              <span class="text-uppercase text-muted small ms-2" style="font-size: 0.85rem;">Data Structures & Algorithms</span>
+              <h5 class="card-title mt-2 mb-2" style="font-size: 1.1rem; font-weight: 700;">Design a Free Food App</h5>
+              <p class="card-text mb-0" style="font-size: 0.97rem; color: #444;">We created this guide after speaking with our 100+ interviewers, which includes detailed notes, common challenges, as well as our approach at mock interviews.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 18px;">
+            <div class="card-body p-0">
+              <span class="badge mb-2" style="background: #2970ff; color: #fff; font-weight: 600; border-radius: 6px; padding: 6px 14px; font-size: 0.95rem;">Easy</span>
+              <span class="text-uppercase text-muted small ms-2" style="font-size: 0.85rem;">Data Structures & Algorithms</span>
+              <h5 class="card-title mt-2 mb-2" style="font-size: 1.1rem; font-weight: 700;">Design a Free Food App</h5>
+              <p class="card-text mb-0" style="font-size: 0.97rem; color: #444;">We created this guide after speaking with our 100+ interviewers, which includes detailed notes, common challenges, as well as our approach at mock interviews.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Medium Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 18px;">
+            <div class="card-body p-0">
+              <span class="badge mb-2" style="background: #ffb300; color: #fff; font-weight: 600; border-radius: 6px; padding: 6px 14px; font-size: 0.95rem;">Medium</span>
+              <span class="text-uppercase text-muted small ms-2" style="font-size: 0.85rem;">Data Structures & Algorithms</span>
+              <h5 class="card-title mt-2 mb-2" style="font-size: 1.1rem; font-weight: 700;">Design a Free Food App</h5>
+              <p class="card-text mb-0" style="font-size: 0.97rem; color: #444;">We created this guide after speaking with our 100+ interviewers, which includes detailed notes, common challenges, as well as our approach at mock interviews.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Hard Card -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 p-3 border-0 shadow-sm" style="border-radius: 18px;">
+            <div class="card-body p-0">
+              <span class="badge mb-2" style="background: #2ecc40; color: #fff; font-weight: 600; border-radius: 6px; padding: 6px 14px; font-size: 0.95rem;">Hard</span>
+              <span class="text-uppercase text-muted small ms-2" style="font-size: 0.85rem;">Data Structures & Algorithms</span>
+              <h5 class="card-title mt-2 mb-2" style="font-size: 1.1rem; font-weight: 700;">Design a Free Food App</h5>
+              <p class="card-text mb-0" style="font-size: 0.97rem; color: #444;">We created this guide after speaking with our 100+ interviewers, which includes detailed notes, common challenges, as well as our approach at mock interviews.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Security Section -->
+  <section class="py-5" style="background: #faf8fa;">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 col-lg-6">
+          <h2 class="fw-bold mb-3" style="font-size: 2.2rem; text-align: left;">Security is our top priority</h2>
+          <p class="mb-0" style="color: #6c6c6c; font-size: 1.1rem; text-align: left;">Intervue serves startups to fortune 500 companies with<br>enterprise grade security baked in by design</p>
+        </div>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm d-flex flex-column justify-content-between" style="border-radius: 18px; min-height: 220px;">
+            <div>
+              <i class="fa fa-key fa-lg mb-3"></i>
+              <div class="fw-bold mb-1" style="font-size: 1.1rem;">Security</div>
+              <div class="mb-2" style="color: #6c6c6c; font-size: 0.98rem;">Protecting your data at every layer is fundamental to how Intervue works</div>
+            </div>
+            <div class="text-end"><i class="fa fa-arrow-right"></i></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm d-flex flex-column justify-content-between" style="border-radius: 18px; min-height: 220px;">
+            <div>
+              <i class="fa fa-layer-group fa-lg mb-3"></i>
+              <div class="fw-bold mb-1" style="font-size: 1.1rem;">Compliances</div>
+              <div class="mb-2" style="color: #6c6c6c; font-size: 0.98rem;">Enterprise grade compliance commitments where we have established controls to adhere to those commitments</div>
+            </div>
+            <div class="text-end"><i class="fa fa-arrow-right"></i></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column justify-content-between">
+          <div class="card mb-3 p-4 border-0 shadow-sm d-flex flex-row align-items-center justify-content-between" style="border-radius: 18px; min-height: 100px;">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-rocket fa-lg me-2"></i>
+              <div class="fw-bold" style="font-size: 1.1rem;">Intervue for Startups</div>
+            </div>
+            <div class="text-end"><i class="fa fa-arrow-right"></i></div>
+          </div>
+          <div class="card mt-3 p-4 border-0 shadow-sm d-flex flex-row align-items-center justify-content-between" style="border-radius: 18px; min-height: 100px;">
+            <div class="d-flex align-items-center">
+              <i class="fa fa-globe fa-lg me-2"></i>
+              <div class="fw-bold" style="font-size: 1.1rem;">Intervue for Enterprises</div>
+            </div>
+            <div class="text-end"><i class="fa fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-3 mb-md-0 d-flex justify-content-center">
+          <div class="position-relative" style="width: 320px; height: 180px; background: #f5f5f5; border-radius: 32px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+            <img src="https://via.placeholder.com/320x180.png?text=Video+Thumbnail" alt="testimonial video" style="width: 100%; height: 100%; object-fit: cover; border-radius: 32px;">
+            <button class="btn btn-light position-absolute top-50 start-50 translate-middle rounded-circle shadow" style="width: 56px; height: 56px;">
+              <i class="fa fa-play fa-lg text-primary"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <blockquote class="blockquote mb-2" style="font-size: 1.1rem; font-weight: 500;">After interviewing candidates on Intervue, we were able to convert at least 5% of people from our applications base to hire.</blockquote>
+          <div class="d-flex align-items-center mt-3">
+            <img src="https://via.placeholder.com/48x48.png?text=NG" alt="Niket Gupta" class="rounded-circle me-3" width="48" height="48">
+            <div>
+              <div class="fw-bold">Niket Gupta</div>
+              <div class="text-muted small">Group Head of Talent Acquisition, Yulu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h4 class="fw-bold mb-4" style="font-size: 1.4rem;">Explore more products on intervue</h4>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 shadow-sm" style="border-radius: 18px;">
+            <img src="html-css-assignment/img3.png" alt="Product 1" class="w-100 mb-3" style="border-radius: 14px; height: 140px; object-fit: cover;">
+            <div class="card-body">
+              <h6 class="fw-bold">On-demand</h6>
+              <p class="text-muted small">Save 50% of engineering & management bandwidth, automate candidate interviews in minutes.</p>
+              <a href="#" class="text-primary">Know more &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 shadow-sm" style="border-radius: 18px;">
+            <img src="html-css-assignment/img4.png" alt="Product 2" class="w-100 mb-3" style="border-radius: 14px; height: 140px; object-fit: cover;">
+            <div class="card-body">
+              <h6 class="fw-bold">Live Interviews</h6>
+              <p class="text-muted small">Assess candidates in real-time with our live coding environment & integrated video calls.</p>
+              <a href="#" class="text-primary">Know more &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 shadow-sm" style="border-radius: 18px;">
+            <img src="html-css-assignment/img5.png" alt="Product 3" class="w-100 mb-3" style="border-radius: 14px; height: 140px; object-fit: cover;">
+            <div class="card-body">
+              <h6 class="fw-bold">Assessments</h6>
+              <p class="text-muted small">Share assessment across batches with MCQ, Prog & subjective questions.</p>
+              <a href="#" class="text-primary">Know more &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5" style="background: #faeae4;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h2 class="fw-bold mb-2" style="font-size: 1.5rem;">Frequently Asked Questions</h2>
+          <p class="mb-3" style="color: #6c6c6c; font-size: 1rem;">Cras tincidunt lobortis feugiat vivamus at morbi leo urna molestie atole elementum eu facilisis faucibus interdum posuere.</p>
+          <div class="accordion border-0" id="faqAccordionMobile" style="background: transparent;">
+            <div class="accordion-item border-0" style="background: transparent; border-bottom: 1px solid #bdbdbd;">
+              <h2 class="accordion-header" id="faqm1">
+                <button class="accordion-button px-0 py-3 bg-transparent shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsem1" aria-expanded="true" aria-controls="collapsem1" style="font-size: 1.08rem; font-weight: 600; color: #222; background: transparent;">
+                  How do I schedule an interview?
+                </button>
+              </h2>
+              <div id="collapsem1" class="accordion-collapse collapse show" aria-labelledby="faqm1" data-bs-parent="#faqAccordionMobile">
+                <div class="accordion-body px-0 pt-0 pb-3" style="color: #444; font-size: 0.98rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes.</div>
+              </div>
+            </div>
+            <div class="accordion-item border-0" style="background: transparent; border-bottom: 1px solid #bdbdbd;">
+              <h2 class="accordion-header" id="faqm2">
+                <button class="accordion-button collapsed px-0 py-3 bg-transparent shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsem2" aria-expanded="false" aria-controls="collapsem2" style="font-size: 1.08rem; font-weight: 600; color: #222; background: transparent;">
+                  Will I be charged per interview?
+                </button>
+              </h2>
+              <div id="collapsem2" class="accordion-collapse collapse" aria-labelledby="faqm2" data-bs-parent="#faqAccordionMobile">
+                <div class="accordion-body px-0 pt-0 pb-3" style="color: #444; font-size: 0.98rem;">Answer goes here.</div>
+              </div>
+            </div>
+            <div class="accordion-item border-0" style="background: transparent; border-bottom: 1px solid #bdbdbd;">
+              <h2 class="accordion-header" id="faqm3">
+                <button class="accordion-button collapsed px-0 py-3 bg-transparent shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsem3" aria-expanded="false" aria-controls="collapsem3" style="font-size: 1.08rem; font-weight: 600; color: #222; background: transparent;">
+                  Can I get a trial for On-demand interviews?
+                </button>
+              </h2>
+              <div id="collapsem3" class="accordion-collapse collapse" aria-labelledby="faqm3" data-bs-parent="#faqAccordionMobile">
+                <div class="accordion-body px-0 pt-0 pb-3" style="color: #444; font-size: 0.98rem;">Answer goes here.</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="fw-bold mb-1" style="font-size: 1.1rem;">Still have doubts?</div>
+            <a href="#" class="fw-bold d-inline-flex align-items-center" style="color: #3b5bdb; text-decoration: none; font-size: 1.05rem;"><i class="fa fa-phone me-2"></i>Talk to our representative</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3" style="background: #29292b; color: #fff;">
+    <div class="container">
+      <div class="row align-items-start mb-4">
+        <div class="col-12 col-md-3 mb-4 mb-md-0">
+          <div class="mb-3">
+            <img src="html-css-assignment/img2.png" alt="intervue logo" style="height: 40px;">
+          </div>
+          <div class="mb-3 d-none d-md-flex gap-3">
+            <a href="#" class="text-white text-decoration-none"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fab fa-pinterest fa-lg"></i></a>
+          </div>
+          <div class="mt-4">
+            <div class="fw-bold mb-2" style="color: #ffb300; font-size: 1.15rem;">Hire better &amp; faster</div>
+            <form class="d-flex align-items-center" style="max-width: 320px;">
+              <input type="email" class="form-control border-0 bg-transparent text-white px-0" placeholder="Enter your email address" style="border-bottom: 1px solid #666; border-radius: 0; font-size: 1.05rem;">
+              <button class="btn p-0 ms-2" type="submit" style="color: #ffb300; font-size: 1.6rem;"><i class="fa fa-arrow-up-right-from-square"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="fw-bold mb-2">Company</div>
+          <ul class="list-unstyled" style="color: #bdbdbd;">
+            <li>So gehts</li>
+            <li>Erfahrung</li>
+            <li>Aligner</li>
+            <li>Preise</li>
+            <li>Standorte</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="fw-bold mb-2">Resources</div>
+          <ul class="list-unstyled" style="color: #bdbdbd;">
+            <li>Blog</li>
+            <li>FAQ</li>
+            <li>Lift Media</li>
+            <li>Offene Stellen</li>
+            <li>Presse kit</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="fw-bold mb-2">Product</div>
+          <ul class="list-unstyled" style="color: #bdbdbd;">
+            <li>Gratis Termin</li>
+            <li>Freunde einladen</li>
+            <li>Patienteninforma</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="fw-bold mb-2">Product</div>
+          <ul class="list-unstyled" style="color: #bdbdbd;">
+            <li>Blog</li>
+            <li>FAQ</li>
+            <li>Lift Media</li>
+            <li>Offene Stellen</li>
+            <li>Presse kit</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Mobile social icons row -->
+      <div class="row d-flex d-md-none mb-3">
+        <div class="col-12 d-flex justify-content-center gap-3">
+          <a href="#" class="text-white text-decoration-none"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white text-decoration-none"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-white text-decoration-none"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="#" class="text-white text-decoration-none"><i class="fab fa-pinterest fa-lg"></i></a>
+        </div>
+      </div>
+      <div class="row align-items-center pt-3 border-top" style="border-color: #444 !important;">
+        <div class="col-12 col-md-6 small text-muted" style="color: #bdbdbd !important;">© 2023 Intervue. Crafted by great minds.</div>
+        <div class="col-12 col-md-6 small text-md-end text-muted mt-2 mt-md-0" style="color: #bdbdbd !important;">
+          <span class="ms-md-3">Datenschutz</span>
+          <span class="ms-md-3">Impressum</span>
+          <span class="ms-md-3">Cookie Policy</span>
+          <span class="ms-md-3">AGBs</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
